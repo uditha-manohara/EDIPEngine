@@ -1,7 +1,5 @@
 # Edge Deterministic Ingestion Protocol (EDIP)
 
-[![PyPI version](https://img.shields.io/pypi/v/edip)](https://pypi.org/project/edip/)
-[![Python versions](https://img.shields.io/pypi/pyversions/edip)](https://pypi.org/project/edip/)
 [![License: Proprietary](https://img.shields.io/badge/license-Proprietary-red)](https://neziora.com)
 [![Platform: Windows x64](https://img.shields.io/badge/platform-Windows%20x64-blue)](https://pypi.org/project/edip/)
 
