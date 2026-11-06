@@ -2,6 +2,10 @@
 
 [![License: Proprietary](https://img.shields.io/badge/license-Proprietary-red)](https://neziora.com)
 [![Platform: Windows x64](https://img.shields.io/badge/platform-Windows%20x64-blue)](https://pypi.org/project/edip/)
+[![PyPI version](https://img.shields.io/pypi/v/edip.svg)](https://pypi.org/project/edip/)
+[![Paper DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.23995414-blue.svg)](https://doi.org/10.5281/zenodo.23995414)
+[![Software DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.23995358-blue.svg)](https://doi.org/10.5281/zenodo.23995358)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0003--1178--5309-a6ce39.svg)](https://orcid.org/0009-0003-1178-5309)
 
 **Official Links:** [PyPI](https://pypi.org/project/edip/) · [Neziora](https://neziora.com) · [Documentation](https://neziora.com) · [Author: Uditha Manohara Prasad](https://udithamanohara.dev) · [LinkedIn](https://www.linkedin.com/in/uditha-manohara/)
 
@@ -35,7 +39,7 @@ EDIP is intended to improve the reliability of local document-processing workflo
               ▼
        ┌───────────────┐
        │  EDIP Engine  │
-       │     Loop      │
+       │    Loop       │
        └───────┬───────┘
                │
                ├─ Dynamic Schema Introspection
@@ -152,11 +156,9 @@ else:
 ```python
 def audit_callback(file_path, success, info):
     status = "SUCCESS" if success else "QUARANTINED"
-
     print(
         f"[{status}] File: {file_path} | Details: {info}"
     )
-
 
 # Launch continuous directory monitoring
 watcher = AmbientWatcher(
@@ -194,7 +196,6 @@ The architectural design and implementation of the Edge Deterministic Ingestion 
 
 **Uditha Manohara Prasad**  
 *Software Engineer & AI Systems Researcher*
-
 - **LinkedIn**: [linkedin.com/in/uditha-manohara](https://www.linkedin.com/in/uditha-manohara/)
 - **X / Twitter**: [@uditha_manohara](https://x.com/uditha_manohara)
 - **Instagram**: [@uditha.manohara](https://www.instagram.com/uditha.manohara/)
@@ -206,7 +207,6 @@ The architectural design and implementation of the Edge Deterministic Ingestion 
 
 **Neziora**  
 *Technology Venture*
-
 - **Website**: [neziora.com](https://neziora.com)
 - **LinkedIn**: [linkedin.com/company/neziora](https://www.linkedin.com/company/neziora)
 - **X / Twitter**: [@Neziora](https://x.com/Neziora)
@@ -219,15 +219,27 @@ The architectural design and implementation of the Edge Deterministic Ingestion 
 
 ## Citation
 
-If you reference the EDIP methodology or architecture in technical reports, academic publications, or repositories, please cite:
+If you use EDIP or reference its relational constraint reflection architecture in your research, please cite both the software implementation and the accompanying preprint:
 
 ```bibtex
-@software{prasad2026edip,
-  author       = {Uditha Manohara Prasad},
-  title        = {Edge Deterministic Ingestion Protocol (EDIP): Closed-Loop Relational Constraint Reflection for Edge AI},
-  year         = {2026},
-  publisher    = {Neziora},
-  url          = {https://pypi.org/project/edip/}
+@article{prasad2026edip_paper,
+  author    = {Prasad, Uditha Manohara},
+  title     = {Edge Deterministic Ingestion Protocol (EDIP): Closed-Loop Relational Constraint Reflection for Autonomous Document Ingestion on Quantized Edge Models},
+  journal   = {Neziora Research Systems Preprints},
+  year      = {2026},
+  publisher = {Neziora},
+  doi       = {10.5281/zenodo.23995414},
+  url       = {[https://doi.org/10.5281/zenodo.23995414](https://doi.org/10.5281/zenodo.23995414)}
+}
+
+@software{prasad2026edip_engine,
+  author    = {Prasad, Uditha Manohara},
+  title     = {EDIP: Edge Deterministic Ingestion Protocol Engine},
+  year      = {2026},
+  publisher = {Neziora},
+  version   = {v1.1.5},
+  doi       = {10.5281/zenodo.23995358},
+  url       = {[https://github.com/uditha-manohara/EDIPEngine](https://github.com/uditha-manohara/EDIPEngine)}
 }
 ```
 
@@ -236,5 +248,4 @@ If you reference the EDIP methodology or architecture in technical reports, acad
 ## License
 
 Copyright © 2026 Neziora & Uditha Manohara Prasad. All rights reserved.
-
 Source code distribution, binary compilation, and commercial deployment are subject to proprietary licensing terms.
