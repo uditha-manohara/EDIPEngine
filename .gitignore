@@ -1,0 +1,21 @@
+
+# Databases & WAL logs
+*.db
+*.db-wal
+*.db-shm
+
+# Runtime Pipeline Directories
+Inbound_Invoices/
+Processed_Archive/
+Quarantine_Documents/
+
+# Python Build & Bytecode
+__pycache__/
+*.pyc
+*.pyd
+*.c
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+compile_engine.py

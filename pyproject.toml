@@ -1,0 +1,43 @@
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "edip"
+version = "1.1.2"
+description = "Edge Deterministic Ingestion Protocol using dynamic SQLite constraint reflection"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Uditha Manohara Prasad" }
+]
+license = { text = "Proprietary" }
+
+dependencies = [
+    "requests>=2.28.0",
+    "watchdog>=3.0.0"
+]
+
+
+[project.urls]
+Homepage = "https://neziora.com"
+
+
+[tool.setuptools]
+include-package-data = true
+
+
+[tool.setuptools.package-data]
+edip = ["*.pyd"]
+
+
+[tool.setuptools.packages.find]
+include = ["edip*"]
+exclude = [
+    "Inbound_Invoices*",
+    "Processed_Archive*",
+    "Quarantine_Documents*",
+    "tests*"
+]
